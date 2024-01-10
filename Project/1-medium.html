@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Първа българска държава: средно</title>
+    <link rel="stylesheet" type="text/css" href="easy.css">
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <div id="cont">
+        <a href="help.html" target="_blank" class="link"><img id="help" src="photo/help.png" title="help" alt="help"></a>
+        <a href="index.html" class="link" onclick="return confirm('Ако се върнете при началната страница ще изгубите прогреса си!')"><img id="home" src="photo/home.png" title="home" alt="home"></a><br>
+        <h2 id="title">Първа българска държава: средно</h2>
+        <div id="bar">
+            <br><br>
+            <span id="numa">Отговори</span>: <span id="num">0</span> от 16<br><br>
+            Време: <span id="min">0</span>:<span id="sec">00</span><br><br>
+            <button id="submit" onclick="endIt()">Предай</button><br>
+            <span id="dont">Моля попълнете всички въпроси!</span>
+        </div>
+        <div id="cont2">
+            <form id="quiz" name="quiz">
+                <div class="question">
+                    <p class="qtext" id="q1">1.Кой владетел обединява българите в „Стара Велика България“</p>
+                    <input type="radio" id="opt11" name="q1" class="option" value="0" onclick="count(event)">
+                    <label for="opt11" class="label">
+                        а) <span id="11">Крум</span>
+                    </label>
+                    <input type="radio" id="opt12" name="q1" class="option" value="1" onclick="count(event)">
+                    <label for="opt12" class="label">
+                        б) <span id="12">Кубрат</span>
+                    </label><br>
+                    <input type="radio" id="opt13" name="q1" class="option" value="2" onclick="count(event)">
+                    <label for="opt13" class="label">
+                        в) <span id="13">Аспарух</span>
+                    </label>
+                    <input type="radio" id="opt14" name="q1" class="option" value="3" onclick="count(event)">
+                    <label for="opt14" class="label">
+                        г) <span id="14">Тервел</span>
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="qtext" id="q2">2.С кой византийски император Тервел сключва официална договорка, според
+                        която държавните граници на България са политически признати, а територията се разширява в
+                        областта Загоре?</p>
+                    <input type="radio" id="opt21" name="q2" class="option" value="0" onclick="count(event)">
+                    <label for="opt21" class="label">
+                        а) <span id="21">test</span>
+                    </label>
+                    <input type="radio" id="opt22" name="q2" class="option" value="1" onclick="count(event)">
+                    <label for="opt22" class="label">
+                        б) <span id="22">test</span>
+                    </label><br>
+                    <input type="radio" id="opt23" name="q2" class="option" value="2" onclick="count(event)">
+                    <label for="opt23" class="label">
+                        в) <span id="23">test</span>
+                    </label>
+                    <input type="radio" id="opt24" name="q2" class="option" value="3" onclick="count(event)">
+                    <label for="opt24" class="label">
+                        г) <span id="24">test</span>
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="qtext" id="q3">3.Test</p>
+                    <input type="radio" id="opt31" name="q3" class="option" value="0" onclick="count(event)">
+                    <label for="opt31" class="label">
+                        а) <span id="31">test</span>
+                    </label>
+                    <input type="radio" id="opt32" name="q3" class="option" value="1" onclick="count(event)">
+                    <label for="opt32" class="label">
+                        б) <span id="32">test</span>
+                    </label><br>
+                    <input type="radio" id="opt33" name="q3" class="option" value="2" onclick="count(event)">
+                    <label for="opt33" class="label">
+                        в) <span id="33">test</span>
+                    </label>
+                    <input type="radio" id="opt34" name="q3" class="option" value="3" onclick="count(event)">
+                    <label for="opt34" class="label">
+                        г) <span id="34">test</span>
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="qtext" id="q4">4.Test</p>
+                    <input type="radio" id="opt41" name="q4" class="option" value="0" onclick="count(event)">
+                    <label for="opt41" class="label">
+                        а) <span id="41">test</span>
+                    </label>
+                    <input type="radio" id="opt42" name="q4" class="option" value="1" onclick="count(event)">
+                    <label for="opt42" class="label">
+                        б) <span id="42">test</span>
+                    </label><br>
+                    <input type="radio" id="opt43" name="q4" class="option" value="2" onclick="count(event)">
+                    <label for="opt43" class="label">
+                        в) <span id="43">test</span>
+                    </label>
+                    <input type="radio" id="opt44" name="q4" class="option" value="3" onclick="count(event)">
+                    <label for="opt44" class="label">
+                        г) <span id="44">test</span>
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="qtext" id="q5">5.Test</p>
+                    <input type="radio" id="opt51" name="q5" class="option" value="0" onclick="count(event)">
+                    <label for="opt51" class="label">
+                        а) <span id="51">test</span>
+                    </label>
+                    <input type="radio" id="opt52" name="q5" class="option" value="1" onclick="count(event)">
+                    <label for="opt52" class="label">
+                        б) <span id="52">test</span>
+                    </label><br>
+                    <input type="radio" id="opt53" name="q5" class="option" value="2" onclick="count(event)">
+                    <label for="opt53" class="label">
+                        в) <span id="53">test</span>
+                    </label>
+                    <input type="radio" id="opt54" name="q5" class="option" value="3" onclick="count(event)">
+                    <label for="opt54" class="label">
+                        г) <span id="54">test</span>
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="qtext" id="q6">6.Test</p>
+                    <input type="radio" id="opt61" name="q6" class="option" value="0" onclick="count(event)">
+                    <label for="opt61" class="label">
+                        а) <span id="61">test</span>
+                    </label>
+                    <input type="radio" id="opt62" name="q6" class="option" value="1" onclick="count(event)">
+                    <label for="opt62" class="label">
+                        б) <span id="62">test</span>
+                    </label><br>
+                    <input type="radio" id="opt63" name="q6" class="option" value="2" onclick="count(event)">
+                    <label for="opt63" class="label">
+                        в) <span id="63">test</span>
+                    </label>
+                    <input type="radio" id="opt64" name="q6" class="option" value="3" onclick="count(event)">
+                    <label for="opt64" class="label">
+                        г) <span id="64">test</span>
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="qtext" id="q7">7.Test</p>
+                    <input type="radio" id="opt71" name="q7" class="option" value="0" onclick="count(event)">
+                    <label for="opt71" class="label">
+                        а) <span id="71">test</span>
+                    </label>
+                    <input type="radio" id="opt72" name="q7" class="option" value="1" onclick="count(event)">
+                    <label for="opt72" class="label">
+                        б) <span id="72">test</span>
+                    </label><br>
+                    <input type="radio" id="opt73" name="q7" class="option" value="2" onclick="count(event)">
+                    <label for="opt73" class="label">
+                        в) <span id="73">test</span>
+                    </label>
+                    <input type="radio" id="opt74" name="q7" class="option" value="3" onclick="count(event)">
+                    <label for="opt74" class="label">
+                        г) <span id="74">test</span>
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="qtext" id="q8">8.Test</p>
+                    <input type="radio" id="opt81" name="q8" class="option" value="0" onclick="count(event)">
+                    <label for="opt81" class="label">
+                        а) <span id="81">test</span>
+                    </label>
+                    <input type="radio" id="opt82" name="q8" class="option" value="1" onclick="count(event)">
+                    <label for="opt82" class="label">
+                        б) <span id="82">test</span>
+                    </label><br>
+                    <input type="radio" id="opt83" name="q8" class="option" value="2" onclick="count(event)">
+                    <label for="opt83" class="label">
+                        в) <span id="83">test</span>
+                    </label>
+                    <input type="radio" id="opt84" name="q8" class="option" value="3" onclick="count(event)">
+                    <label for="opt84" class="label">
+                        г) <span id="84">test</span>
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="qtext" id="q9">9.Test</p>
+                    <input type="radio" id="opt91" name="q9" class="option" value="0" onclick="count(event)">
+                    <label for="opt91" class="label">
+                        а) <span id="91">test</span>
+                    </label>
+                    <input type="radio" id="opt92" name="q9" class="option" value="1" onclick="count(event)">
+                    <label for="opt92" class="label">
+                        б) <span id="92">test</span>
+                    </label><br>
+                    <input type="radio" id="opt93" name="q9" class="option" value="2" onclick="count(event)">
+                    <label for="opt93" class="label">
+                        в) <span id="93">test</span>
+                    </label>
+                    <input type="radio" id="opt94" name="q9" class="option" value="3" onclick="count(event)">
+                    <label for="opt94" class="label">
+                        г) <span id="94">test</span>
+                    </label>
+                </div>
+                <div class="question">
+                    <p class="qtext" id="q10">10.Test</p>
+                    <input type="radio" id="opt101" name="q10" class="option" value="0" onclick="count(event)">
+                    <label for="opt101" class="label">
+                        а) <span id="101">test</span>
+                    </label>
+                    <input type="radio" id="opt102" name="q10" class="option" value="1" onclick="count(event)">
+                    <label for="opt102" class="label">
+                        б) <span id="102">test</span>
+                    </label><br>
+                    <input type="radio" id="opt103" name="q10" class="option" value="2" onclick="count(event)">
+                    <label for="opt103" class="label">
+                        в) <span id="103">test</span>
+                    </label>
+                    <input type="radio" id="opt104" name="q10" class="option" value="3" onclick="count(event)">
+                    <label for="opt104" class="label">
+                        г) <span id="104">test</span>
+                    </label>
+                </div>
+                <div class="time">
+                    <p class="qtext" id="timet">11. Подредете дадените български владетели по хронологичен ред на
+                        управление.</p><br>
+                    <span class="white">1. хан Аспарух  2. цар Самуил   3. хан Омуртаг</span><br>
+                    <span class="white">4. цар Симеон   5. княз Борис I  6. хан Крум </span><br><br><br><br>
+
+                    <input type="text" id="n10" name="n1" class="square" maxlength="1" onchange="timeTable(event)">
+                    <input type="text" id="n11" name="n2" class="square" maxlength="1" onchange="timeTable(event)">
+                    <input type="text" id="n12" name="n3" class="square" maxlength="1" onchange="timeTable(event)">
+                    <input type="text" id="n13" name="n4" class="square" maxlength="1" onchange="timeTable(event)">
+                    <input type="text" id="n14" name="n5" class="square" maxlength="1" onchange="timeTable(event)">
+                    <input type="text" id="n15" name="n6" class="square" maxlength="1" onchange="timeTable(event)"><br>
+                    <img id="time_table" src="photo/time2.png" title="time_table" alt="time_table">
+
+                </div>
+            </form>
+            <div id="end">
+                <span id="endt">Сгрешени въпроси: </span><span id="errors"></span><br><br>
+                <div class="info" id="i0">
+                    <span class="wrong" id="wrong0">test</span><br><br>
+                    Кратка подсказка: <span id="info0">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a target="_blank" href="404.html" id="link0">тук</a>.<br><br>
+                </div>
+                <div class="info" id="i1">
+                    <span class="wrong" id="wrong1">test</span><br><br>
+                    Кратка подсказка: <span id="info1">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a  target="_blank" href="404.html" id="link1">тук</a>.<br><br>
+                </div>
+                <div class="info" id="i2">
+                    <span class="wrong" id="wrong2">test</span><br><br>
+                    Кратка подсказка: <span id="info2">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a target="_blank" href="404.html" id="link2">тук</a>.<br><br>
+                </div>
+                <div class="info" id="i3">
+                    <span class="wrong" id="wrong3">test</span><br><br>
+                    Кратка подсказка: <span id="info3">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a target="_blank" href="404.html" id="link3">тук</a>.<br><br>
+                </div>
+                <div class="info" id="i4">
+                    <span class="wrong" id="wrong4">test</span><br><br>
+                    Кратка подсказка: <span id="info4">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a target="_blank" href="404.html" id="link4">тук</a>.<br><br>
+                </div>
+                <div class="info" id="i5">
+                    <span class="wrong" id="wrong5">test</span><br><br>
+                    Кратка подсказка: <span id="info5">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a  target="_blank" href="404.html" id="link5">тук</a>.<br><br>
+                </div>
+                <div class="info" id="i6">
+                    <span class="wrong" id="wrong6">test</span><br><br>
+                    Кратка подсказка: <span id="info6">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a target="_blank" href="404.html" id="link6">тук</a>.<br><br>
+                </div>
+                <div class="info" id="i7">
+                    <span class="wrong" id="wrong7">test</span><br><br>
+                    Кратка подсказка: <span id="info7">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a target="_blank" href="404.html" id="link7">тук</a>.<br><br>
+                </div>
+                <div class="info" id="i8">
+                    <span class="wrong" id="wrong8">test</span><br><br>
+                    Кратка подсказка: <span id="info8">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a target="_blank" href="404.html" id="link8">тук</a>.<br><br>
+                </div>
+                <div class="info" id="i9">
+                    <span class="wrong" id="wrong9">test</span><br><br>
+                    Кратка подсказка: <span id="info9">...</span><br><br>
+                    Отговор и допълнителна литература ще намерите <a target="_blank" href="404.html" id="link9">тук</a>.<br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="diff">1</div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+#cont {
+    font-family: arial;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    width: 900px;
+}
+
+img {
+    width: 900px;
+}
+
+figcaption {
+    font-style: italic;
+}
